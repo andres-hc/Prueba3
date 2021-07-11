@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Prueba3DAL
 {
-    public class PuntoCarga
+    public partial class PuntoCarga
     {
         //id, tipo, capacidadMaxima, fechaVencimiento.
         private int id;
@@ -18,5 +18,6 @@ namespace Prueba3DAL
         public int Tipo { get => tipo; set => tipo = value; }
         public int CapacidadMaxima { get => capacidadMaxima; set => capacidadMaxima = value; }
         public DateTime FechaVencimiento { get => fechaVencimiento; set => fechaVencimiento = value; }
+
     }
 }

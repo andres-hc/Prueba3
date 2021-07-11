@@ -15,9 +15,17 @@ namespace Prueba3DAL.DAL
             estacionServicio.Add(e);
         }
 
+        //Recuperar lista de estaciones servicio
         public List<EstacionServicio> GetAll()
         {
             return estacionServicio;
+        }
+        
+        //Eliminar Estacion Servicio
+        public void Remove(int idEstacionServicio)
+        {
+            EstacionServicio eS = estacionServicio.Find(e => e.IdEstacionServicio == idEstacionServicio);
+            estacionServicio.Remove(eS);
         }
     }
 }
