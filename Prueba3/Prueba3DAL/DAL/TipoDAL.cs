@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Prueba3DAL.DAL
 {
-    class TipoDAL
+    public class TipoDAL
     {
 
         private static List<Tipo> tipo = new List<Tipo>()

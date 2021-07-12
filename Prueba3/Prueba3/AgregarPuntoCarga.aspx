@@ -19,8 +19,18 @@
 
                 </div>
                 <br />
+                <div class="form-group">
+                    <label for="tipoDd">Tipo</label>
+                    <asp:DropDownList ID="tipoDd" CssClass="form-control" runat="server"></asp:DropDownList>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="fechaTxt">Fecha Vencimiento</label>
+                    <asp:TextBox ID="fechatxt" CssClass="form-control" type="text" runat="server" placeHolder="Ingrese fecha de vencimiento (Formato dd-mm-aaaa)" required></asp:TextBox>
+                </div>
+                <br />
 
-                <asp:Button ID="registrarPtoBtn" runat="server" Text="Registrar" CssClass="btn btn-primary" onClick="registrarPtoBtn" />
+                <asp:Button ID="registrarPtoBtn" runat="server" Text="Registrar" CssClass="btn btn-primary" OnClick="registrarPtoBtn_Click" />
                 <br />
                 <div>
                     <asp:Label ID="confirmacion" runat="server" CssClass="text-success"></asp:Label>
