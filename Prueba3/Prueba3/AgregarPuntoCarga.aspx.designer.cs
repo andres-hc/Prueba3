@@ -10,16 +10,16 @@
 namespace Prueba3 {
     
     
-    public partial class AgregarEstacion {
+    public partial class AgregarPuntoCarga {
         
         /// <summary>
-        /// Control idEstacionNum.
+        /// Control idPtoCarga.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox idEstacionNum;
+        protected global::System.Web.UI.WebControls.TextBox idPtoCarga;
         
         /// <summary>
         /// Control capacidadNum.
@@ -31,13 +31,13 @@ namespace Prueba3 {
         protected global::System.Web.UI.WebControls.TextBox capacidadNum;
         
         /// <summary>
-        /// Control registrarEstBtn.
+        /// Control registrarPtoBtn.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button registrarEstBtn;
+        protected global::System.Web.UI.WebControls.Button registrarPtoBtn;
         
         /// <summary>
         /// Control confirmacion.

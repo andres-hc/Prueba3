@@ -10,9 +10,9 @@ namespace Prueba3DAL.DAL
     {
         private static List<EstacionServicio> estacionServicio = new List<EstacionServicio>();
 
-        private void Add(EstacionServicio e)
+        public void Add(EstacionServicio es)
         {
-            estacionServicio.Add(e);
+            estacionServicio.Add(es);
         }
 
         //Recuperar lista de estaciones servicio
@@ -20,7 +20,7 @@ namespace Prueba3DAL.DAL
         {
             return estacionServicio;
         }
-        
+
         //Eliminar Estacion Servicio
         public void Remove(int idEstacionServicio)
         {

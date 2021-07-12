@@ -9,10 +9,10 @@ namespace Prueba3DAL
     public class EstacionServicio
     {
         // capacidadMaxima, direccion.
-        private int region;
+        private int idEstacionServicio;
         private int capacidadMaxima;
 
-        public int Region { get => region; set => region = value; }
         public int CapacidadMaxima { get => capacidadMaxima; set => capacidadMaxima = value; }
+        public int IdEstacionServicio { get => idEstacionServicio; set => idEstacionServicio = value; }
     }
 }

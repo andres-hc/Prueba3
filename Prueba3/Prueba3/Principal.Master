@@ -26,17 +26,16 @@
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <li><a class="dropdown-item" href="AgregarEstacion.aspx">Ingresar nueva Estacion</a></li>
-                                    <li><a class="dropdown-item" href="#">Ver Estaciones</a></li>
-                                    <li><a class="dropdown-item" href="#">Eliminar Estacion</a></li>
+                                    <li><a class="dropdown-item" href="MostrarEstacion.aspx">Ver Estaciones</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Puntos de Carga
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">Ingresar nuevo Punto Carga</a></li>
+                                    <li><a class="dropdown-item" href="AgregarPuntoCarga.aspx">Ingresar nuevo Punto Carga</a></li>
                                     <li><a class="dropdown-item" href="#">Ver Puntos Carga</a></li>
-                                    <li><a class="dropdown-item" href="#">Modificar</a></li>
+                                    <li><a class="dropdown-item" href="#">PORSIACASO</a></li>
                                 </ul>
                             </li>
                         </ul>

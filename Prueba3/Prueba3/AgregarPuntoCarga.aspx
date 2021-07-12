@@ -1,15 +1,15 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Principal.Master" AutoEventWireup="true" CodeBehind="AgregarEstacion.aspx.cs" Inherits="Prueba3.AgregarEstacion" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Principal.Master" AutoEventWireup="true" CodeBehind="AgregarPuntoCarga.aspx.cs" Inherits="Prueba3.AgregarPuntoCarga" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div>
         <div class="card">
             <div class="card-body">
-                <h3>Registrar Estacion Servicio</h3>
+                <h3>Registrar Punto Carga</h3>
                 <br />
                 <div class="form-group">
-                    <label for="idEstacionNum">Identificador Estacion Servicio</label>
-                    <asp:TextBox ID="idEstacionNum" CssClass="form-control" type="Number" runat="server" placeHolder="Ingrese identificador unico" required></asp:TextBox>
+                    <label for="idPtoCarga">Identificador Punto Carga</label>
+                    <asp:TextBox ID="idPtoCarga" CssClass="form-control" type="Number" runat="server" placeHolder="Ingrese identificador unico" required></asp:TextBox>
 
                 </div>
                 <br />
@@ -20,7 +20,8 @@
                 </div>
                 <br />
 
-                <asp:Button ID="registrarEstBtn" runat="server" Text="Registrar" CssClass="btn btn-primary" OnClick="registrarEstBtn_Click" /><br />
+                <asp:Button ID="registrarPtoBtn" runat="server" Text="Registrar" CssClass="btn btn-primary" onClick="registrarPtoBtn" />
+                <br />
                 <div>
                     <asp:Label ID="confirmacion" runat="server" CssClass="text-success"></asp:Label>
                 </div>
