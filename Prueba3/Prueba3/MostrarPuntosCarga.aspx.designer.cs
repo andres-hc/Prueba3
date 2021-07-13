@@ -13,12 +13,21 @@ namespace Prueba3 {
     public partial class MostrarPuntosCarga {
         
         /// <summary>
-        /// Control ptosCargaGrid.
+        /// Control tipoDd.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView ptosCargaGrid;
+        protected global::System.Web.UI.WebControls.DropDownList tipoDd;
+        
+        /// <summary>
+        /// Control puntosGrid.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView puntosGrid;
     }
 }

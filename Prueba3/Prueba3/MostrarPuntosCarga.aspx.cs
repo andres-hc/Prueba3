@@ -1,5 +1,6 @@
 ﻿using Prueba3DAL;
 using Prueba3DAL.DAL;
+using Prueba3DAL.DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,18 +25,43 @@ namespace Prueba3
 
         private void CargarTabla(List<PuntoCarga> puntos)
         {
-            ptosCargaGrid.DataSource = puntos;
-            ptosCargaGrid.DataBind();
+            puntosGrid.DataSource = puntos;
+            puntosGrid.DataBind();
         }
 
-        protected void ptosCargaGrid_RowCommand(object sender, GridViewCommandEventArgs e)
+        protected void tipoDd_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(e.CommandName == "eliminar")
+            String tipoSlct = tipoDd.SelectedValue;
+            if (tipoDd.SelectedValue == "")
             {
-                String idPtoEliminar = e.CommandArgument.ToString();
-                int pC = Convert.ToInt32(idPtoEliminar);
-                puntoCargaDAL.Remove(pC);
+                CargarTabla(puntoCargaDAL.GetAll());
             }
+            else
+            {
+                List<PuntoCarga> filtro = puntoCargaDAL.GetAll(Convert.ToInt32(tipoSlct));
+                CargarTabla(filtro);
+            }
+        }
+
+        protected void puntosGrid_RowEditing(object sender, GridViewEditEventArgs e)
+        {
+            
+        }
+
+        protected void puntosGrid_RowUpdating(object sender, GridViewUpdateEventArgs e)
+        {
+
+            //GridViewRow obj = puntosGrid.Rows[e.RowIndex];
+
+            //String tipo = (obj.FindControl("tipo2") as TextBox).Text.ToUpper();
+            //int capacidad = Convert.ToInt32((obj.FindControl("cap2") as TextBox).Text);
+            //String fV = (obj.FindControl("fv2") as TextBox).Text.ToUpper();
+
+        }
+
+        protected void puntosGrid_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            
         }
     }
 }

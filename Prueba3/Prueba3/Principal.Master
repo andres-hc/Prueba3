@@ -35,7 +35,6 @@
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <li><a class="dropdown-item" href="AgregarPuntoCarga.aspx">Ingresar nuevo Punto Carga</a></li>
                                     <li><a class="dropdown-item" href="MostrarPuntosCarga.aspx">Ver Puntos Carga</a></li>
-                                    <li><a class="dropdown-item" href="#">PORSIACASO</a></li>
                                 </ul>
                             </li>
                         </ul>

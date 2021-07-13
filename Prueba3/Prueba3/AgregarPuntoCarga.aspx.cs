@@ -41,17 +41,25 @@ namespace Prueba3
                 int capacidadMaxima = Convert.ToInt32(capacidadMax.Text);
                 String fechaVencimiento = fechaTxt.Text;
 
-                PuntoCarga ptoCarga = new PuntoCarga();
-                ptoCarga.Id = id;
-                ptoCarga.Tipo = tipo;
-                ptoCarga.CapacidadMaxima = capacidadMaxima;
-                ptoCarga.FechaVencimiento = fechaVencimiento;
+                if (fechaVencimiento.Trim() != string.Empty)
+                {
+                    PuntoCarga ptoCarga = new PuntoCarga();
+                    ptoCarga.Id = id;
+                    ptoCarga.Tipo = tipo;
+                    ptoCarga.CapacidadMaxima = capacidadMaxima;
+                    ptoCarga.FechaVencimiento = fechaVencimiento;
 
-                PuntoCargaDAL ptoCargaDAL = new PuntoCargaDAL();
-                ptoCargaDAL.Add(ptoCarga);
+                    PuntoCargaDAL ptoCargaDAL = new PuntoCargaDAL();
+                    ptoCargaDAL.Add(ptoCarga);
 
-                confirmacion.Text = "Registro Exitoso !";
-                limpiarCampos();
+                    confirmacion.Text = "Registro Exitoso !";
+                    limpiarCampos();
+                }
+                else
+                {
+                    confirmacion.Text = "Registro Incorrecto ! Complete la fecha de vencimiento";
+                    
+                }
             }
             else
             {
@@ -72,10 +80,11 @@ namespace Prueba3
         //    {
         //        String[] fechaArray = fecha.Split('-');
 
-        //        Validador de fecha formato dd - mm - aaaa
+        //        //Validador de fecha formato dd - mm - aaaa
 
         //        if (fechaArray.Length == 3)
         //        {
+        //            if ()
         //            if (fechaArray[0].Length != 2 && fechaArray[1].Length != 2 && fechaArray[2].Length != 4)
         //            {
         //                fechaCV.ErrorMessage = "La fecha no tiene el formato valido, ingrese como se indica.";

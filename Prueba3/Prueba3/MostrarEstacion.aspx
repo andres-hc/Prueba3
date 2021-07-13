@@ -1,5 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Principal.Master" AutoEventWireup="true" CodeBehind="MostrarEstacion.aspx.cs" Inherits="Prueba3.MostrarEstacion" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <h3>Mostrar estaciones de servicio</h3>
+    
     <div class="mt-5">
          <asp:GridView ID="estacionesGrid" runat="server" AutoGenerateColumns="false" EmptyDataText="Aun no se han ingresado Estaciones de Servicio." CssClass="table table-hover" OnRowCommand="estacionesGrid_RowCommand">
             <Columns>
