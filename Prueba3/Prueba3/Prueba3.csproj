@@ -71,6 +71,7 @@
     <Content Include="AgregarPuntoCarga.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="MostrarEstacion.aspx" />
+    <Content Include="MostrarPuntosCarga.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -101,6 +102,13 @@
     </Compile>
     <Compile Include="MostrarEstacion.aspx.designer.cs">
       <DependentUpon>MostrarEstacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarPuntosCarga.aspx.cs">
+      <DependentUpon>MostrarPuntosCarga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MostrarPuntosCarga.aspx.designer.cs">
+      <DependentUpon>MostrarPuntosCarga.aspx</DependentUpon>
     </Compile>
     <Compile Include="Principal.Master.cs">
       <DependentUpon>Principal.Master</DependentUpon>

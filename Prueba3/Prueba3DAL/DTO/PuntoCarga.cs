@@ -12,12 +12,11 @@ namespace Prueba3DAL
         private int id;
         private int tipo;
         private int capacidadMaxima;
-        private DateTime fechaVencimiento;
+        private String fechaVencimiento;
 
         public int Id { get => id; set => id = value; }
         public int Tipo { get => tipo; set => tipo = value; }
         public int CapacidadMaxima { get => capacidadMaxima; set => capacidadMaxima = value; }
-        public DateTime FechaVencimiento { get => fechaVencimiento; set => fechaVencimiento = value; }
-
+        public string FechaVencimiento { get => fechaVencimiento; set => fechaVencimiento = value; }
     }
 }

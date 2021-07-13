@@ -47,7 +47,7 @@ namespace Prueba3
             }
             else
             {
-
+                confirmacion.Text = "Problema al registrar. Reintente :(";
             }
 
         }

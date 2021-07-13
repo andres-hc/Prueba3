@@ -22,13 +22,13 @@ namespace Prueba3 {
         protected global::System.Web.UI.WebControls.TextBox idPtoCarga;
         
         /// <summary>
-        /// Control capacidadNum.
+        /// Control capacidadMax.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox capacidadNum;
+        protected global::System.Web.UI.WebControls.TextBox capacidadMax;
         
         /// <summary>
         /// Control tipoDd.
@@ -40,13 +40,13 @@ namespace Prueba3 {
         protected global::System.Web.UI.WebControls.DropDownList tipoDd;
         
         /// <summary>
-        /// Control fechatxt.
+        /// Control fechaTxt.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox fechatxt;
+        protected global::System.Web.UI.WebControls.TextBox fechaTxt;
         
         /// <summary>
         /// Control registrarPtoBtn.

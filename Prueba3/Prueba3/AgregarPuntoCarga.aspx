@@ -14,8 +14,8 @@
                 </div>
                 <br />
                 <div class="form-group">
-                    <label for="capacidadNum">Capacidad Maxima</label>
-                    <asp:TextBox ID="capacidadNum" CssClass="form-control" type="Number" runat="server" placeHolder="Ingrese Capacidad maxima" required></asp:TextBox>
+                    <label for="capacidadMax">Capacidad Maxima</label>
+                    <asp:TextBox ID="capacidadMax" CssClass="form-control" type="Number" runat="server" placeHolder="Ingrese Capacidad maxima" required></asp:TextBox>
 
                 </div>
                 <br />
@@ -26,7 +26,8 @@
                 <br />
                 <div class="form-group">
                     <label for="fechaTxt">Fecha Vencimiento</label>
-                    <asp:TextBox ID="fechatxt" CssClass="form-control" type="text" runat="server" placeHolder="Ingrese fecha de vencimiento (Formato dd-mm-aaaa)" required></asp:TextBox>
+                    <asp:TextBox ID="fechaTxt" CssClass="form-control" type="text" runat="server" placeHolder="Ingrese fecha de vencimiento (Formato dd-mm-aaaa)" required></asp:TextBox>
+                    <%--<asp:CustomValidator ID="fechaCV" runat="server" ValidateEmptyText="true" CssClass="text-danger" ControlToValidate="fechaTxt" OnServerValidate="fechaCV_ServerValidate" ErrorMessage="CustomValidator"></asp:CustomValidator>--%>
                 </div>
                 <br />
 

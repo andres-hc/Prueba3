@@ -10,7 +10,7 @@ namespace Prueba3DAL.DAL
     {
         private static List<PuntoCarga> puntoCarga = new List<PuntoCarga>();
 
-        private void Add(PuntoCarga p)
+        public void Add(PuntoCarga p)
         {
             puntoCarga.Add(p);
         }
